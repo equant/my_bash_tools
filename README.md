@@ -12,12 +12,12 @@ Requires pdfjam, zathura, inotify, od, awk
 
 Recursively searches all pdfs for string.  Requires nothing special.  Not sensitive to case by default.
 
-Put this in your .bashrc
+Put this in your .bashrc:
 ~~~
 . ~/bin/my_bash_tools/pdf_search.bash
 ~~~
 
-Then you can do this whenever you want...
+Then you can do this whenever you want:
 ~~~
 cd /home/equant/directory/structure/full/of/directories/and/pdf/files
 pdf J04381486
