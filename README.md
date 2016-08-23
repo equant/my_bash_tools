@@ -10,7 +10,13 @@ Requires pdfjam, zathura, inotify, od, awk
 
 # pdf_search.bash - Recursive grep for pdfs.
 
-Recursively searches all pdfs for string.  Requires nothing special.
+Recursively searches all pdfs for string.  Requires nothing special.  Not sensitive to case by default.
+
+~~~
+. ~/bin/my_bash_tools/pdf_search.bash
+cd /home/equant/directory/structure/full/of/directories/and/pdf/files
+pdf J04381486
+~~~
 
 # report_ip.bash - Poor man's DynDNS
 
