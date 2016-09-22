@@ -6,7 +6,7 @@ files with different names (and meta-data).
 
 Easy way to quickly review/summarize recent research.
 
-Requires pdfjam, zathura, inotify, od, awk
+Requires pdfjam, zathura, inotify, od, awk.  inotify is not needed if you are willing to forego 'real-time' monitoring (e.g. executing via a cron-job).
 
 # pdf_search.bash - Recursive grep for pdfs.
 
