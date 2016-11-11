@@ -1,4 +1,4 @@
-export MMGG_CONF_DIR = "~/.config/mmgg"
+#export MMGG_CONF_DIR = "~/.config/mmgg"
 
 function mm() {
     USAGE="Usage: mm [bookmark tag]" ;
