@@ -1,45 +1,45 @@
-function mm() {
-    CONF_DIR="~/.config/mmgm"
-    USAGE="Usage: mm [bookmark]" ;
+export MMGG_CONF_DIR = "~/.config/mmgg"
 
-    if  [ ! -d ~/.config/mmgm ] ; then
+function mm() {
+    USAGE="Usage: mm [bookmark tag]" ;
+
+    if  [ ! -d ~/.config/mmgg ] ; then
         echo "Making config directory"
-        mkdir -p ~/.config/mmgm
+        mkdir -p ~/.config/mmgg
     fi
 
     if [ $# -eq 0 ] ; then
 		# number of arguments is zero
-        echo "cd `pwd`" > ~/.config/mmgm/m;
+        echo "cd `pwd`" > ~/.config/mmgg/m;
     else
         case $1 in
             -h)
                 echo "$USAGE";
                 ;;
             *)
-                echo "cd `pwd`" > ~/.config/mmgm/"$1";
+                echo "cd `pwd`" > ~/.config/mmgg/"$1";
                 ;;
         esac
     fi
 }
 
-function gm() {
-    CONF_DIR="~/.config/mmgm"
-    USAGE="Usage: gm [bookmark]" ;
+function gg() {
+    USAGE="Usage: gg [bookmark tag]" ;
 
-    if  [ ! -d ~/.config/mmgm ] ; then
+    if  [ ! -d ~/.config/mmgg ] ; then
         echo "You have no bookmarks"
     fi
 
     if [ $# -eq 0 ] ; then
 		# number of arguments is zero
-        source ~/.config/mmgm/m;
+        source ~/.config/mmgg/m;
     else
         case $1 in
             -h)
                 echo "$USAGE";
                 ;;
             *)
-                source ~/.config/mmgm/"$1";
+                source ~/.config/mmgg/"$1";
                 ;;
         esac
     fi
