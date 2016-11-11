@@ -3,6 +3,7 @@ function mm() {
     USAGE="Usage: mm [bookmark]" ;
 
     if  [ ! -d ~/.config/mmgm ] ; then
+        echo "Making config directory"
         mkdir -p ~/.config/mmgm
     fi
 
